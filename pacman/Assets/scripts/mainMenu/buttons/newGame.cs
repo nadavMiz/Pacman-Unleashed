@@ -8,6 +8,7 @@ public class newGame : _Button
 
 	override public int Press()
     {
+        GameData.instance.SavePlayerPref();
         SceneManager.LoadScene("level1", LoadSceneMode.Single);
 
         return 0;
